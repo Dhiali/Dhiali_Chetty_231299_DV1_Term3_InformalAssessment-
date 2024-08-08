@@ -36,11 +36,13 @@ function DisplayMovies(data) {
   // Loop through each movie
   for (let i = 0; i < Math.min(1, movies.length); i++) {
     const movie = movies[i]; // retrived details for a movie
+
     // loop through details for this movie ^
     for (let i = 0; i < Math.min(2, movie["list"].length); i++) {
       const list = movie["list"][i];
       console.log(list);
-      // Create object storing movie details
+
+      // Create object storing movie details like title and stuff
       const movieDetails = {
         posterSrc: list["image"],
         title: list["title"],
@@ -91,5 +93,5 @@ function DisplayMovies(data) {
   });
 }
 
-fetchMovies(); //Calls the fetchMovie function to retrive and display
+fetchMovies(); //Calls the fetchMovie function to retrive info and display data 
 
