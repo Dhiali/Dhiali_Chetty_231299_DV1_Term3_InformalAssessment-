@@ -1,0 +1,13 @@
+#movies-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie {
+    margin-bottom: 20px;
+}
+
+.movie img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
